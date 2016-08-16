@@ -27,10 +27,10 @@ public abstract class Factory {
     {
         if(singleton== null)
         {
-            singleton=new Factory() {
+            singleton =new Factory() {
                  @Override
-    protected Computer factoryMethod(String tipoCompu) {
-        Computer c;
+                  protected Computer factoryMethod(String tipoCompu) {
+                    Computer c;
         switch (tipoCompu)
                 {
                 case "laptop":
@@ -46,15 +46,20 @@ public abstract class Factory {
                         c = null;
                         break;
                     
-                 }       
-        return c;
-                }   
-                
+                 }      
+                 return c;
+                }
             };
-        }
-        private static Factory singleton;
+    
+        
+    
         
         
     }
-    
+         return singleton;
+}
+ 
+        private static Factory singleton;
+}
+
 
