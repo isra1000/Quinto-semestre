@@ -45,19 +45,14 @@ public abstract class Factory {
                     default :
                         c = null;
                         break;
-                    
-                 }      
+                    }      
                  return c;
                 }
             };
-    
-        
-    
-        
-        
-    }
+     
+        }
          return singleton;
-}
+    }
  
         private static Factory singleton;
 }
