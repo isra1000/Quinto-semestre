@@ -18,7 +18,7 @@ public class Director {
         this.builder = builder;
     }
     
-    Avion getAvion()
+    public Avion getAvion()
     {
         return builder.getAvion();
     }
