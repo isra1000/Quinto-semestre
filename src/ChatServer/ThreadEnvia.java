@@ -42,10 +42,10 @@ public class ThreadEnvia implements Runnable{
     void enviarMensaje(String mensaje)
     {
         try {
-            salida.writeObject("Servidor->  " + mensaje);
+            salida.writeObject("Servidor->   " +  mensaje);
             salida.flush();
             
-            main.mostrarMensaje("Servidor->  "+ mensaje);
+            main.mostrarMensaje("Servidor->   "+  mensaje + "\n");
         } catch (IOException ex) {
             main.mostrarMensaje("No se pudo enviar el mensaje");
         }
